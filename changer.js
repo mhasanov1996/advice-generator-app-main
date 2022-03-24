@@ -11,7 +11,7 @@ const cardText = document.querySelector(".card-text");
 const cardID = document.querySelector(".card-title");
 
 document.querySelector(".diceButton").addEventListener("click", function () {
-  cardID.innerHTML = "ADVICE " + (myAdvices.indexOf(myAdvices[lastIndex]) + 1);
+  cardID.innerHTML = "ADVICE #" + (myAdvices.indexOf(myAdvices[lastIndex]) + 1);
   cardText.innerHTML = myAdvices[lastIndex];
 
   if (lastIndex === myAdvices.length - 1) {
